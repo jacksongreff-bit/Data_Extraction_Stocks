@@ -46,7 +46,7 @@ if st.sidebar.button("Get Data"):
       csv=df.to_csv().encode("utf-8")
       st.download_button(
         label="Download Data as CSV",
-        data=csv
+        data=csv,
         file_name=f"{ticker}_stock_data.csv",
         mime="text/csv"
       )
